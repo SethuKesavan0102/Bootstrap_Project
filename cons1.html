@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function players(name,age,game,position,){
+        this.name=name
+        this.age=age
+        this.game=game
+        this.position=position
+    }
+    players.prototype.gender="male"        //adding to the constructer
+    var ram = new players("ram",19,"football","goal keeper")
+    // var yogi= new players("yogi",20,"volley ball","all rounder")
+    // var muthu= new players("muthu",19,"cricket","bowler")
+    // console.log(ram,yogi,muthu)
+    console.log(ram)
+    console.log(ram.gender);
+</script>
+</html>

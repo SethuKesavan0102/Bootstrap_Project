@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name1 = "mukilan" //normal string
+        const name2 = "manu"
+        const name3 = new String("mukilan") 
+        const name4 = new String("mukilan")
+        // when normal string are compared with ==
+        // the data are compared
+        console.log(name1 == name2) //false
+        // when normal string is compared with string object with ==
+        // the data are compared
+        console.log(name1 == name3) //true
+        // when normal string compared with string object with ===
+        // the date and the type  are compared
+        console.log(name1 === name3) //false
+        // when the objects are compared with either == and ===
+        // both the objects are different indefinite of type
+        console.log(name3 == name4) //false
+        console.log(name3 === name4) //false
+
+        const name5 = name3
+        console.log(name3 == name5)
+        console.log(name3 === name5)
+    </script> 
+</body>
+</html>

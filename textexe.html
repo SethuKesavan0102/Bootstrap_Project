@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Box Example</title>
+<style>
+    
+    input[type="text"] {
+        width: 600px;
+        height: 150px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #0b0b0b;
+    } 
+    .output{
+        height: 150px;
+        width: 600px;
+        border: 2px solid red;
+    }
+   
+    
+</style>
+</head>
+<body>
+   
+        <input type="text" id="inputBox" placeholder="Enter some text..." oninput="showText()"><br><br><br>
+        <div class="output" id="outputText"></div>
+        <button onclick="replaceText()">Replace</button>
+        <button onclick="uppercase()">UpperCase</button>
+        <button onclick="lowercase()">LowerCase</button>
+        <button onclick="replaceall()">Replace all</button>
+        <button onclick="reset()">Reset</button>
+        <input type="button" value="reset" >
+
+    <script>
+        function showText() {
+            var inputText = document.getElementById('inputBox').value;
+            var outputDiv = document.getElementById('outputText');
+            
+            outputDiv.innerHTML = inputText;
+        }
+
+        function replaceText() {
+            var outputDiv = document.getElementById('outputText');
+            
+            outputDiv.innerHTML = outputDiv.innerHTML.replace('manu', 'manju');
+        }
+        function uppercase() {
+            var outputDiv = document.getElementById('outputText');
+            
+            outputDiv.innerHTML = outputDiv.innerHTML.toUpperCase();
+        }
+        function lowercase() {
+            var outputDiv = document.getElementById('outputText');
+            
+            outputDiv.innerHTML = outputDiv.innerHTML.toLowerCase();
+        }
+        function replaceall() {
+            var outputDiv = document.getElementById('outputText');
+            
+            outputDiv.innerHTML = outputDiv.innerHTML.replaceAll('manu','manju');
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Element Object</h1>
+<h2>The innerHTML Property</h2>
+
+<!-- <textarea name="area" id="area" cols="26" rows="8" oninput="toggle(event)" required placeholder="Few Lines About Yourself...">this is javascript</textarea>
+
+<p>user is:</p>
+<p id="inner"></p> -->
+
+
+<input type="text" placeholder="type something....." oninput="displaytext(event)"><br>
+<p id="content"></p>
+</body>
+<script>
+// const html = document.getElementById("area").innerHTML;
+// document.getElementById("inner").innerHTML = html;
+// console.log(html);
+
+
+function displaytext(event){
+    const text = event.target.value
+    document.getElementById("content").innerHTML = text
+}
+</script>
+
+
+</html>
