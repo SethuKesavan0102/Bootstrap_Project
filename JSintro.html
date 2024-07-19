@@ -13,15 +13,23 @@
     <script src="JSintro.js"></script>
 </body>
 <script>
-     var person={}
-person.firstname="siva"
-person.lastname="ram"
-person.age=20
-// console.log(person)
-console.log(person.lastname +" "+ person.firstname)
-console.log(person["firstname"] +" "+ person["lastname"])
+/
+// console.log(person.lastname +" "+ person.firstname)
+// console.log(person["firstname"] +" "+ person["lastname"])
 
-
+const user = {
+    firstname:"siva",
+    lastname:"ram",
+    marks:{
+        sslc:200,
+        hsc:{
+            second:300
+        }
+    },
+    fullname:function(){
+        return this.firstname +" "+this.lastname
+    }
+}
 // console.log(user);
 // console.log(user.marks);
 console.log(user.marks.hsc);
