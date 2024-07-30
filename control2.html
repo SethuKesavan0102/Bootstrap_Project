@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="text" id="input" >
+    <input type="button" value="click" onclick="inputTxt()">
+</body>
+<script>
+    // let ch = 'u'
+    // switch(ch){
+    //     case 'a':
+    //         console.log("Vowel")
+    //         break
+    //     case 'e': 
+    //         console.log("Vowel")
+    //         break
+    //     case 'i':
+    //         console.log("Vowel")
+    //         break
+    //     case 'o':
+    //         console.log("Vowel")
+    //         break
+    //     case 'u':
+    //         console.log("Vowel")
+    //         break
+    //     default:
+    //         console.log("conson")
+    // }
+
+    // switch(ch){
+    //     case 'a':
+    //     case 'e': 
+    //     case 'i':
+    //     case 'o':
+    //     case 'u':
+    //         console.log("Vowel")
+    //         break
+    //     default:
+    //         console.log("conson")
+    // }
+
+    function inputTxt(){
+        let tst = document.getElementById("input").value 
+        switch(tst){
+        case 'a':
+        case 'e': 
+        case 'i':
+        case 'o':
+        case 'u':
+            console.log("Vowel")
+            break
+        default:
+            console.log("conson")
+    }
+    }
+</script>
+</html>
