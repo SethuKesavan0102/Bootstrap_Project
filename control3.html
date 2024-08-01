@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-
+    <input type="text" name="txt" id="txtt">
+    <input type="button" value="generate table" onclick="tableTxt()">
     <div id="table-txt"></div>
     
 </body>
@@ -27,13 +28,36 @@
         //     i--
         // }
 
-        let i = 1
+        // let i = 1
+        // let txt = ''
+        // while(i<=10){
+        //     txt = txt + `${i} x 3 = ${i*3}</br>`
+        //     i++
+        // }
+        // console.log(txt)
+        // document.getElementById("table-txt").innerHTML=txt
+
+        function tableTxt(){
+            let i = 1
         let txt = ''
         while(i<=10){
-            txt = txt + `${i} x 2 = ${i*2}</br>`
+            txt = txt + `${i} x ${document.getElementById("txtt").value} = ${i*(document.getElementById("txtt").value)}</br>`
             i++
         }
         console.log(txt)
         document.getElementById("table-txt").innerHTML=txt
+        }
+        
+        // function tableTxt(){
+        //     let n = document.getElementById("txtt").value
+        //     let i = 1
+        // let txt = ''
+        // while(i<=10){
+        //     txt = txt + `${i} x ${n} = ${i*n}</br>`
+        //     i++
+        // }
+        // console.log(txt)
+        // document.getElementById("table-txt").innerHTML=txt
+        // }
     </script>
 </html>
