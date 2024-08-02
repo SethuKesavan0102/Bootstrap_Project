@@ -16,11 +16,12 @@
     
 
     <!-- document.getElementById().style -->
-
-   <input type="text" placeholder="name" id="name"><br><br>
-   <input type="number" id="age" placeholder="age" ><br><br>
-   <input type="number" id="mark" placeholder="mark"><br><br>
+<div>
+   <input type="text" placeholder="name" class="nam" id="name"><br><br>
+   <input type="number" id="age" class="nam" placeholder="age" ><br><br>
+   <input type="number" id="mark" class="nam" placeholder="mark"><br><br>
     <input type="button" value="submit" onclick="submitForm()">
+</div>
 
 
 
@@ -30,12 +31,12 @@
             var age = document.getElementById("age").value
         if(age >=18){
             if(age <=60){
-                alert("you are eligible")
+                alert("Age is accepted")
             }else{
-                alert("not eligible")
+                alert("Above 60+ not accepted")
             }
         }else{
-            alert("not eligible")
+            alert("Below 18 not accepted")
         }
 
         var mark = document.getElementById("mark").value
@@ -45,9 +46,11 @@
                 alert("you are not eligible for scholarship")
             }
 
-          if(age == age ){
-            document.get
+          if(age <=18){
+            document.getElementsById("age").style.bordercolor="red"
 
+          }else{
+            document.getElementsById("age").style.bordercolor="red"
           }
         }
        
