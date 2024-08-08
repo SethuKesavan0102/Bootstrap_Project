@@ -29,30 +29,46 @@
     <script>
         function submitForm(){
             var age = document.getElementById("age").value
-        if(age >=18){
-            if(age <=60){
-                alert("Age is accepted")
-            }else{
-                alert("Above 60+ not accepted")
-            }
+            var mark = document.getElementById("mark").value
+            var name = document.getElementById("name").value 
+       
+
+        // if(age == "" && mark == "" && name == ""){
+        //     document.getElementById("age").style.borderColor="red"
+        //     document.getElementById("mark").style.borderColor="red"
+        //     document.getElementById("name").style.borderColor="red"
+        // }else{
+        //     document.getElementById("age").style.borderColor="green"
+        //     document.getElementById("mark").style.borderColor="green"
+        //     document.getElementById("name").style.borderColor="green"
+        // }
+
+        if(name ==""){
+            document.getElementById("name").style.borderBlockColor="red"
+        }else if(age ==""){
+            document.getElementById("age").style.borderColor="red"
+        }else if(mark ==""){
+            document.getElementById("mark").style.borderColor="red"
         }else{
-            alert("Below 18 not accepted")
+            document.getElementById("age").style.borderColor="green"
+            document.getElementById("mark").style.borderColor="green"
+            document.getElementById("name").style.borderColor="green"
         }
 
-        var mark = document.getElementById("mark").value
+        if(age >=18 && age <=60){
             if(mark >=80){
                 alert("you are eligible for scholarship")
             }else{
                 alert("you are not eligible for scholarship")
             }
-
-          if(age <=18){
-            document.getElementsById("age").style.bordercolor="red"
-
-          }else{
-            document.getElementsById("age").style.bordercolor="red"
-          }
+        }else{
+            alert("Below 18 not accepted")
         }
+     }
+        
+           
+
+         
        
     </script>
 </html>
