@@ -46,9 +46,61 @@
 
     //ternary operator to check the eligibility to vote
 
-    let age = 21;
-    let result = (age >= 18) ? "you are eligible to vote." : "you are not eligible to vote yet";
-    console.log(result);
+    // let age = 21;
+    // let result = (age >= 18) ? "you are eligible to vote." : "you are not eligible to vote yet";
+    // console.log(result);
+    
+
+    // Array 
+
+    // combining arrays 
+    // const array1 = ["volvo","audi",1,2,3];
+
+    // const array2 = [4,5,6];
+    // const combinedarray = [...array1,...array2]; //using spread operator to combined
+    // console.log("original...",combinedarray); //output: [1,2,3,4,5,6]
+
+
+    // copy arrays
+
+    // const copy = [...combinedarray]
+    // console.log("copy....",copy);
+
+
+    //using spread with function arguments
+    // function sum(a, b, c){
+    //     return a + b + c;
+    // }
+    // const numbers =[1,2,3]
+
+    // //using spread operator to pass array elements as individual arguments
+    // const result = sum(...numbers)
+    // console.log(result);
+    
+
+    //spreading objects
+
+    // const object1 = {a:1, b:2}
+    // const object2 = {c:3, d:4}
+    // //using spread operator to combine objects
+    // const combinedobject = {...object1,...object2}
+    // console.log(combinedobject);
+    
+
+    //adding elements to arrays
+
+    // const array =[1,2,3,4,5,6,7,8]
+    // console.log(array);
+    //using spread operator to add elements at the beginning
+    // const newarray =[0,...array,9]
+    // console.log(newarray);
+    
+    
+    //destructuring
+
+    const a =[1,2,3,4,5]
+    const [b,c,d,e,f] = a
+    console.log(d);
     
 </script>
 </html>
