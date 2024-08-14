@@ -15,21 +15,62 @@
 <body>
 
    
-    <input type="button" onclick="xo()" id="x1">
-    <input type="button" onclick="xo()" id="x2">
-    <input type="button" onclick="xo()" id="x3"><br>
-    <input type="button" onclick="xo()" id="x4">
-    <input type="button" onclick="xo()" id="x5">
-    <input type="button" onclick="xo()" id="x6"><br>
-    <input type="button" onclick="xo()" id="x7">
-    <input type="button" onclick="xo()" id="x8">
-    <input type="button" onclick="xo()" id="x9">
+    <input type="button" onclick="xo1()" id="x1">
+    <input type="button" onclick="xo2()" id="x2">
+    <input type="button" onclick="xo3()" id="x3"><br>
+    <input type="button" onclick="xo4()" id="x4">
+    <input type="button" onclick="xo5()" id="x5">
+    <input type="button" onclick="xo6()" id="x6"><br>
+    <input type="button" onclick="xo7()" id="x7">
+    <input type="button" onclick="xo8()" id="x8">
+    <input type="button" onclick="xo9()" id="x9">
 
 </body>
 <script>
-    function xo(){
-        var txt ="X"
-        document.getElementById("x1").innerHTML = txt
+    var txt = "X"
+    // function xo1(){
+    //     if(txt == "X" ){
+    //         document.getElementById("x1").value = "X"
+    //         document.getElementById("x1").disabled = true
+    //         txt = 0
+    //     }else{
+    //         document.getElementById("x1").value = "O"
+    //         document.getElementById("x1").disabled = true
+    //         txt = 1
+    //     }
+    // }
+    function xo2(){
+        if(txt == "X" ){
+            document.getElementById("x2").value = "X"
+            document.getElementById("x2").disabled = true
+            txt = 0
+        }else{
+            document.getElementById("x2").value = "O"
+            document.getElementById("x2").disabled = true
+            txt = 1
+        }
+    }
+    function xo3(){
+        if(txt == "X" ){
+            document.getElementById("x3").value = "X"
+            document.getElementById("x3").disabled = true
+            txt = 0
+        }else{
+            document.getElementById("x3").value = "O"
+            document.getElementById("x3").disabled = true
+            txt = 1
+        }
+    }
+    function xo4(){
+        if(txt == "X" ){
+            document.getElementById("x4").value = "X"
+            document.getElementById("x4").disabled = true
+            txt = 0
+        }else{
+            document.getElementById("x4").value = "O"
+            document.getElementById("x4").disabled = true
+            txt = 1
+        }
     }
     
 </script>
