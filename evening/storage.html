@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form > 
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text"><br>
+
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="text"><br>
+
+        <a href="intro.html"><input type="submit" onclick="summ(event)" value="login" ></a>
+         <!-- <button type="button" onclick="summ(event)" formaction="intro.html"></button> -->
+        
+    </form>
+</body>
+<script>
+    function summ(event){
+        event.preventDefault()
+        var username = document.getElementById("username").value
+        localStorage.setItem("name",username)
+        console.log(localStorage.getItem("name"));
+        // console.log(username);
+        // alert("welcome " + username)
+    }
+    
+
+</script>
+</html>
